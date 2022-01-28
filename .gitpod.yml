@@ -1,14 +1,4 @@
 ---
-tasks:
-  - name: Configure GPG signing
-    before: >
-      [[ ! -z $OPENGPG_KEY  ]] &&
-      gpg --verbose --batch --import <(echo $OPENGPG_KEY|base64 -d) &&
-      echo "pinentry-mode loopback" >> ~/.gnupg/gpg.conf &&
-      git config --global user.signingKey "$OPENGPG_KEY_ID" &&
-      git config --global commit.gpgSign "true" &&
-      git config --global tag.forceSignAnnotated "true"
-
 vscode:
   extensions:
     - editorconfig.editorconfig
