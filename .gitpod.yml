@@ -12,3 +12,4 @@ tasks:
 vscode:
   extensions:
     - editorconfig.editorconfig
+    - redhat.vscode-yaml
