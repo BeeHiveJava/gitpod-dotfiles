@@ -13,3 +13,9 @@ vscode:
   extensions:
     - editorconfig.editorconfig
     - redhat.vscode-yaml
+
+ports:
+  - port: 6942 # Projector
+    onOpen: ignore
+  - port: 9999 # Projector
+    onOpen: ignore
