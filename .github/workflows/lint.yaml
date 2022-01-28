@@ -33,3 +33,17 @@ jobs:
         uses: karancode/yamllint-github-action@v2.0.0
         with:
           yamllint_config_filepath: .yamllint.yaml
+
+  commitlint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          # Full git history is needed to get a proper list of commit messages within `commitlint`
+          fetch-depth: 0
+
+      - name: Run commitlint
+        uses: wagoid/commitlint-github-action@v4
+        with:
+          configFile: .commitlintrc.yaml
