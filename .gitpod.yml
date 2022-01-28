@@ -8,3 +8,7 @@ tasks:
       git config --global user.signingKey "$OPENGPG_KEY_ID" &&
       git config --global commit.gpgSign "true" &&
       git config --global tag.forceSignAnnotated "true"
+
+vscode:
+  extensions:
+    - editorconfig.editorconfig

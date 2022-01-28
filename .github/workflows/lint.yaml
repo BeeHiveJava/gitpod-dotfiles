@@ -1,0 +1,24 @@
+---
+name: lint
+
+# yamllint disable-line rule:truthy
+on:
+  push:
+    branches:
+      - main
+      - develop
+
+  pull_request:
+    branches:
+      - main
+      - develop
+
+jobs:
+  editorconfig-checker:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Run editorconfig-checker
+        uses: editorconfig-checker/action-editorconfig-checker@v1
