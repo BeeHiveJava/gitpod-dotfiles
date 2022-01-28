@@ -1,0 +1,12 @@
+# Generally ignored files
+**/*.log*
+**/*.db*
+**/*.env
+
+# Ignore files created by IDEs
+**/.idea/
+**/.vscode/
+**/.devcontainer/
+
+# Include specific files
+!.gitkeep
