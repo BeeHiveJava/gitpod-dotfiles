@@ -80,7 +80,6 @@ function main() {
     #lock_init system
 
     source "$(dirname "${BASH_SOURCE[0]}")/git/install.sh"
-    source "$(dirname "${BASH_SOURCE[0]}")/projector/install.sh"
 }
 
 # shellcheck source=source.sh
