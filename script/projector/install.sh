@@ -12,6 +12,6 @@ pretty_print "Install projector-installer"
 pip3 install projector-installer --user
 
 pretty_print "Install Rider"
-projector ide autoinstall \
+projector --accept-license ide autoinstall \
     --config-name "rider" \
     --ide-name "Rider 2021.3.2"
