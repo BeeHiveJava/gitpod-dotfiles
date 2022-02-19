@@ -79,6 +79,7 @@ function main() {
     colour_init
     #lock_init system
 
+    source "$(dirname "${BASH_SOURCE[0]}")/age/install.sh"
     source "$(dirname "${BASH_SOURCE[0]}")/ssh/install.sh"
     source "$(dirname "${BASH_SOURCE[0]}")/git/install.sh"
 }
