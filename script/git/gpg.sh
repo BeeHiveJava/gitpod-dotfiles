@@ -1,6 +1,6 @@
 #!/bin/bash
 
-if [[ ! -z $OPENGPG_KEY  ]]
+if [[ ! -z $OPENGPG_KEY ]]
 then
     pretty_print "Configuring git to use GPG signing"
 
